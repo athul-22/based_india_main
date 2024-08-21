@@ -20,14 +20,14 @@ export default function Banner() {
                 Download<span className="hidden sm:inline"> on GitHub</span>
               </a>{" "}
               <span className="px-1.5 italic">or</span>{" "}
-              <a
+              {/* <a
                 className="font-medium text-emerald-400 hover:underline"
                 href="https://cruip.com/simple/"
                 target="_blank"
                 rel="noreferrer"
               >
                 Check Premium Version
-              </a>
+              </a> */}
             </div>
             <button
               className="ml-3 border-l border-gray-700 pl-2 text-slate-500 hover:text-slate-400"

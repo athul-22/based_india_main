@@ -22,7 +22,9 @@ export default function Header() {
   return (
     <header className="fixed top-2 z-30 w-full md:top-6">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="relative flex h-14 items-center justify-between gap-3 rounded-2xl bg-white/90 px-3 shadow-lg shadow-black/[0.03] backdrop-blur-sm before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(theme(colors.gray.100),theme(colors.gray.200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
+        <div className="relative flex h-14 items-center justify-between gap-3 rounded-2xl bg-white/90 px-3 shadow-lg shadow-black/[0.03] backdrop-blur-sm before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(theme(colors.gray.100),theme(colors.gray.200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]"
+        style={{borderRadius:'30px',height:'60px',padding:'10px' }}
+        >
           {/* Site branding */}
           <div className="flex flex-1 items-center">
             <Logo />
@@ -31,21 +33,47 @@ export default function Header() {
           {/* Desktop sign in links */}
           <ul className="flex flex-1 items-center justify-end gap-3">
             <li>
-              <Link
+              {/* <Link
                 href="/signin"
                 className="btn-sm bg-white text-gray-800 shadow hover:bg-gray-50"
               >
                 Login
-              </Link>
+              </Link> */}
             </li>
             <li>
-              <Link
+              {/* <Link
                 href="/signup"
                 className="btn-sm bg-gray-800 text-gray-200 shadow hover:bg-gray-900"
               >
                 Register
-              </Link>
+              </Link> */}
             </li>
+            <li style={{color:'grey'}}><Link
+                href="#"
+                className=" text-gray-800  hover:bg-gray-50 " style={{padding:'10px'}}
+              >Explore</Link></li>
+
+
+            <li style={{color:'grey'}}><Link
+                href="#"
+                className=" text-gray-800  hover:bg-gray-50 " style={{padding:'10px'}}
+              >Cult</Link></li>
+
+
+            <li style={{color:'grey'}}><Link
+                href="#"
+                className=" text-gray-800  hover:bg-gray-50 " style={{padding:'10px'}}
+              >Raids</Link></li>
+            
+            <li style={{color:'grey'}}><Link
+                href="#"
+                className=" text-gray-800  hover:bg-gray-50 " style={{padding:'10px'}}
+              >Swap USDC</Link></li>
+
+            <li style={{color:'grey'}}><Link
+                href="#"
+                className="btn-sm text-gray-800 shadow hover:bg-gray-50" style={{backgroundImage:'linear-gradient(to top, rgb(37, 99, 235), rgb(59, 130, 246));',color:'white',padding:'10px',borderRadius:'30px'}}
+              >Connect Wallet</Link></li>
           </ul>
         </div>
       </div>
