@@ -136,7 +136,7 @@ export default function HeroHome() {
 
             <div className="mx-auto max-w-3xl">
               <p
-                className="mb-8 text-lg text-gray-700"
+                className="mb-8 text-2xl text-gray-600"
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
