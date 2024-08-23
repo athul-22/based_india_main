@@ -9,11 +9,38 @@ background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmN
 } */
 
 
-.onboard-overlay {
+/* .onboard-overlay {
     position: absolute;
     inset: 0;
     height: fit-content;
     width: fit-content;
     background-position: center;
     mask-image: linear-gradient(180deg, white, rgba(255, 255, 255, 0));
-  }
+} */
+
+/* .onboard-overlay {
+  position: absolute;
+  inset: 0;
+  height: fit-content;
+  width: fit-content;
+  background-position: center;
+  mask-image: linear-gradient(180deg, white, rgba(255, 255, 255, 0));
+} */
+
+.hero-background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.3;
+  background-image: linear-gradient(#e6e6e6 1.3px, transparent 1.3px), linear-gradient(to right, #e6e6e6 1.3px, #ffffff 1.3px);
+  background-size: 26px 26px;
+}
+
+#main-hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}

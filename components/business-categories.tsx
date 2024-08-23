@@ -12,6 +12,11 @@ import Logo09 from "@/public/images/logo-09.svg";
 export default function BusinessCategories() {
   return (
     <section>
+       <div className="mx-auto max-w-4xl pb-16 text-center md:pb-20" style={{fontSize:'30px'}}>
+            <h1 className="text-10xl md:text-5xl font-bold bg-gradient-to-r from-[#3D1DFF] via-[#6147FF] via-[#D451FF] via-[#EC458D] to-[#FFCA8B] bg-clip-text text-transparent leading-tight">
+                  Our Sponsers    
+            </h1>
+          </div>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="pb-12 md:pb-20">
           {/* Tab panels */}

@@ -70,10 +70,21 @@ export default function Header() {
                 className=" text-gray-800  hover:bg-gray-50 " style={{padding:'10px'}}
               >Swap USDC</Link></li>
 
-            <li style={{color:'grey'}}><Link
-                href="#"
-                className="btn-sm text-gray-800 shadow hover:bg-gray-50" style={{backgroundImage:'linear-gradient(to top, rgb(37, 99, 235), rgb(59, 130, 246));',color:'white',padding:'10px',borderRadius:'30px'}}
-              >Connect Wallet</Link></li>
+<li style={{color:'grey'}}>
+  <Link
+    href="#"
+    className="btn-sm text-white shadow hover:opacity-90 transition-opacity"
+    style={{
+      backgroundImage: 'linear-gradient(15.46deg, rgb(74, 37, 225) 26.3%, rgb(123, 90, 255) 86.4%)',
+      boxShadow: 'rgba(96, 60, 255, 0.48) 0px 21px 27px -10px',
+      padding: '10px',
+      borderRadius: '30px',
+      display: 'inline-block'
+    }}
+  >
+    Connect Wallet
+  </Link>
+</li>
           </ul>
         </div>
       </div>

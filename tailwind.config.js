@@ -18,10 +18,7 @@ module.exports = {
         lg: ["1.125rem", { lineHeight: "1.5", letterSpacing: "-0.017em" }],
         xl: ["1.25rem", { lineHeight: "1.5", letterSpacing: "-0.017em" }],
         "2xl": ["1.5rem", { lineHeight: "1.415", letterSpacing: "-0.037em" }],
-        "3xl": [
-          "1.875rem",
-          { lineHeight: "1.3333", letterSpacing: "-0.037em" },
-        ],
+        "3xl": ["1.875rem", { lineHeight: "1.3333", letterSpacing: "-0.037em" }],
         "4xl": ["2.25rem", { lineHeight: "1.2777", letterSpacing: "-0.037em" }],
         "5xl": ["3rem", { lineHeight: "1", letterSpacing: "-0.037em" }],
         "6xl": ["4rem", { lineHeight: "1", letterSpacing: "-0.037em" }],
@@ -83,7 +80,20 @@ module.exports = {
           to: { transform: "translateX(-100%)" },
         },
       },
+      maskImage: {
+        'gradient-to-t': 'linear-gradient(180deg, white, rgba(255, 255, 255, 0))',
+      },
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [
+    require("@tailwindcss/forms"),
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.mask-gradient-to-t': {
+          maskImage: 'linear-gradient(180deg, white, rgba(255, 255, 255, 0))',
+        },
+      }
+      addUtilities(newUtilities, ['responsive', 'hover'])
+    }
+  ],
 };
