@@ -1,17 +1,12 @@
 'use client'
 
 import React, { ReactNode } from 'react'
-
-
 import { createWeb3Modal } from '@web3modal/wagmi/react'
-
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-
 import { State, WagmiProvider } from 'wagmi'
 import { config } from './wagmi'
 
 
-// Setup queryClient
 const queryClient = new QueryClient()
 
 const projectId = "c26b357532f63f7ba31efebac88d0eed";
@@ -39,3 +34,4 @@ export default function AppKitProvider({
     </WagmiProvider>
   )
 }
+
